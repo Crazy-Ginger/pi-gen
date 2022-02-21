@@ -192,6 +192,9 @@ if [ -z "${IMG_NAME}" ]; then
 	exit 1
 fi
 
+if [ -v WPA_SECTION ]; then
+    WPA_CONF=$(readlink -f $WPA_SECTION)
+fi
 export USE_QEMU="${USE_QEMU:-0}"
 export IMG_DATE="${IMG_DATE:-"$(date +%Y-%m-%d)"}"
 export IMG_FILENAME="${IMG_FILENAME:-"${IMG_DATE}-${IMG_NAME}"}"
@@ -211,6 +214,8 @@ export RELEASE=${RELEASE:-buster}
 export WPA_ESSID
 export WPA_PASSWORD
 export WPA_COUNTRY
+export WPA_CONF
+
 export ENABLE_SSH="${ENABLE_SSH:-0}"
 export PUBKEY_ONLY_SSH="${PUBKEY_ONLY_SSH:-0}"
 
