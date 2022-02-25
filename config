@@ -1,2 +1,2 @@
-IMG_NAME='Raspbian-Pi-puck'
+IMG_NAME='Bullseye-Pi-puck'
 ENABLE_SSH=1
