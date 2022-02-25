@@ -46,3 +46,6 @@ rfkill
 piclone
 arandr
 ffmpeg
+
+udisks2
+unzip zip p7zip-full
