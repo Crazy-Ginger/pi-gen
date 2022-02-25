@@ -31,3 +31,18 @@ ntfs-3g
 pciutils
 rpi-eeprom
 raspinfo
+python python3
+python-pip python3-pip
+python-serial python3-serial
+python3-numpy python-numpy
+python3-smbus
+pypy
+
+sense-hat
+
+tree
+git
+rfkill
+piclone
+arandr
+ffmpeg
